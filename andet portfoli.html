@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batul Al Marie | Digitalt Portefølje</title>
+
+    <style>
+        /* --- VISUALISERING & ÆSTETIK (Farver & Typografi) --- */
+        body {
+            background-color: #fbf9f6; /* Blød, varm sandfarve/nude baggrund */
+            color: #3d3430;            /* Mørk jordfarve til tekst (blødere end sort) */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4a3e3d; /* Elegant mørk støvet brun/grå */
+            color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* --- PROJEKTSTYRING & LAYOUT (Flexbox Menu) --- */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Mellemrum mellem menupunkter */
+        }
+
+        nav a {
+            color: #dfcfc4; /* Lys rosa/nude nuance */
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff; /* Lyser op når musen holdes over */
+        }
+
+        /* --- MAIN FLEXBOX LAYOUT (Kolonner til indhold) --- */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap; /* Gør siden mobilvenlig */
+            gap: 30px;       /* Mellemrum mellem sektionerne */
+        }
+
+        /* Introduktionen fylder hele bredden i toppen af main */
+        .intro-section {
+            flex: 1 1 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .intro-section img {
+            border-radius: 50%; /* Gør dit profilbillede rundt og elegant */
+            border: 3px solid #dfcfc4;
+            object-fit: cover;
+        }
+
+        /* Uddannelse og Erfaring står ved siden af hinanden i to kolonner */
+        .column-section {
+            flex: 1 1 45%; /* Fylder ca. halvdelen af skærmen hver */
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Ekstra info sektion i bunden */
+        .full-section {
+            flex: 1 1 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #4a3e3d;
+            border-bottom: 2px solid #dfcfc4;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-bottom: 5px;
+            color: #5c4d4c;
+        }
+
+        .date {
+            font-style: italic;
+            color: #8c7e7a;
+            margin-top: 0;
+            font-size: 0.9rem;
+        }
+
+        /* --- FOOTER DESIGN --- */
+        footer {
+            background-color: #4a3e3d;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #dfcfc4;
+            text-decoration: none;
+        }
+
+        /* Responsivt design til telefoner */
+        @media (max-width: 768px) {
+            .intro-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .column-section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Batul Al Marie</h1>
+    <nav>
+        <ul>
+            <li><a href="#om-mig">Om mig</a></li>
+            <li><a href="#uddannelse">Uddannelse</a></li>
+            <li><a href="#erfaring">Erfaring</a></li>
+            <li><a href="#ekstra">Kompetencer & Sprog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- INTRODUKTION (Opfylder krav om intro + img) -->
+    <section id="om-mig" class="intro-section">
+        <img src="batul%20Billed.JPG" alt="Portrætbillede af Batul Al Marie" width="200" height="200">
+        <div>
+            <h2>Introduktion</h2>
+            <p>Hej, jeg hedder Batul Al Marie. Jeg læser i øjeblikket <strong>IT Arkitektur (PBA) på Erhvervsakademi København</strong>, hvor jeg bygger ovenpå min stærke sans for struktur, planlægning og systemer.</p>
+            <p>Jeg er en serviceminded, udadvendt og engageret profil med stor erfaring fra detailhandlen. Jeg motiveres af at skabe gode oplevelser, trives i et travlt arbejdsmiljø og har en kæmpe passion for beauty, kosmetik og visuelle trends. Velkommen til mit digitale portefølje!</p>
+        </div>
+    </section>
+
+    <!-- UDDANNELSE (Opfylder krav om ol + uddannelsesliste) -->
+    <section id="uddannelse" class="column-section">
+        <h2>Uddannelse</h2>
+        <ol>
+            <li>
+                <h3>It Arkitektur PBA</h3>
+                <p class="date">Erhvervsakademi København (2026 - 2029)</p>
+            </li>
+            <li>
+                <h3>Nørrebro Gymnasium stx</h3>
+                <p class="date">2023 - 2025</p>
+                <p>Studieretning: Engelsk A, Samfundsfag A</p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- ERFARING (Opfylder krav om ul + jobliste) -->
+    <section id="erfaring" class="column-section">
+        <h2>Erhvervserfaring</h2>
+        <ul>
+            <li>
+                <h3>Makeup ansvarlig - fuldtidsmedarbejder</h3>
+                <p class="date">Normal Farum (Dec 2025 - Nu)</p>
+            </li>
+            <li>
+                <h3>Ungarbejder</h3>
+                <p class="date">Normal Værløse (Juli 2023 - Nov 2025)</p>
+            </li>
+            <li>
+                <h3>Ungarbejder</h3>
+                <p class="date">Normal Rosengårdcentret (Dec 2022 - Maj 2023)</p>
+            </li>
+            <li>
+                <h3>Lagermedarbejder</h3>
+                <p class="date">Beautycos (Sep 2021 - Juni 2022)</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- EKSTRA INFORMATION (Opfylder krav om ekstra info) -->
+    <section id="ekstra" class="full-section">
+        <h2>Kompetencer & Sprog</h2>
+        <p><strong>Mine nøglekompetencer inkluderer:</strong> Kundeservice på højt niveau, salg og mersalg, makeup- og beautyvejledning, samt Visual Merchandising. Jeg arbejder struktureret og tager altid ansvar for mine opgaver.</p>
+        <p><strong>Sprogkundskaber:</strong> Dansk (Modersmål), Arabisk (Modersmål) og Engelsk (Flydende på professionelt niveau).</p>
+    </section>
+</main>
+
+<!-- FOOTER (Opfylder krav om footer + kontaktinfo) -->
+<footer id="kontakt">
+    <h2>Kontaktinformation</h2>
+    <p>Telefon: +45 22 23 50 37 &nbsp;|&nbsp; Email: <a href="mailto:Batulalmarie630@gmail.com">Batulalmarie630@gmail.com</a></p>
+    <p>&copy; 2026 Batul Al Marie. Lavet som obligatorisk porteføljeprojekt.</p>
+</footer>
+
+</body>
+</html>
